@@ -1,3 +1,3 @@
 module.exports = function () {
-  this.body = this.gyazoUrl
+  this.body = this.gyazoUrls.imageUrl
 }

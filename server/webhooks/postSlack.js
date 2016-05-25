@@ -8,7 +8,7 @@ module.exports = function *(next) {
   switch (type.toLowerCase()) {
     case 'markdown':
     case 'md':
-      text += '`' + `[![${imageUrl}](${imageUrl}/r)](${imageUrl})` + '`\n'
+      text += '`' + `[![${imageUrl}](${imageUrl}/r)](${imageUrl})` + '`'
       break
     case 'html':
       text += '`' + `<a href='${imageUrl}' target='_blank'><img src='${imageUrl}/r' /></a>` + '`'
@@ -25,4 +25,5 @@ module.exports = function *(next) {
       }
     ]
   }
+  yield next
 }
