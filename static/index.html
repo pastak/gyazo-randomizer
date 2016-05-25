@@ -1,0 +1,74 @@
+<html>
+  <head>
+    <title>Gyazo Collection Randomizer</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <style>
+      body {
+        font-size: 16px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class='container'>
+      <h1>Gyazo Collection Randomizer</h1>
+
+      This is easy way to get image Url which is selected as random from <a href='https://support.gyazo.com/hc//articles/206458915-How-can-I-use-Gyazo-to-collect-and-share-multiple-images-at-once-' target='_target'>Gyazo Collection</a>. <br /><br />
+
+      GitHub Repo: <a href='https://github.com/pastak/gyazo-randomizer' target='_blank'>https://github.com/pastak/gyazo-randomizer</a>
+
+      <h2>Usage</h2>
+      <p>
+        If your collection URL is <code>https://gyazo.com/collections/51abd733329db8f65a26e040f70ffda3</code>, <br />
+        <code>:collectionId</code> is <code>51abd733329db8f65a26e040f70ffda3</code>
+      </p>
+      <h3>Basic Usage</h3>
+      <ul>
+        <li>
+          Get Url Text: <code>https://gyazo-randomizer.herokuapp.com/random/:collectionId</code>
+          <ul>
+            <li>
+              Sample: <a href='https://gyazo-randomizer.herokuapp.com/random/51abd733329db8f65a26e040f70ffda3' target='_blank'>https://gyazo-randomizer.herokuapp.com/random/51abd733329db8f65a26e040f70ffda3</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          View Html includes image: <code>https://gyazo-randomizer.herokuapp.com/random/:collectionId.html</code>
+          <ul>
+            <li>
+              Sample: <a href='https://gyazo-randomizer.herokuapp.com/random/51abd733329db8f65a26e040f70ffda3.html' target='_blank'>https://gyazo-randomizer.herokuapp.com/random/51abd733329db8f65a26e040f70ffda3.html</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+      <h3>with Slack Webhook</h3>
+      <h4>Setting Outcomming Webhook</h4>
+      <ol>
+        <li>
+          Open <a href='https://my.slack.com/services/new/outgoing-webhook' target='_blank'>your team's Outgoing Webhook Settings</a>.
+        </li>
+        <li>
+          <b>MUST</b> set <mark>trigger_word(s)</mark>.
+        </li>
+        <li>
+          <b>Recommend</b> to set <mark>channel(s)</mark>.
+        </li>
+        <li>
+          Set URL: <code>https://gyazo-randomizer.herokuapp.com/webhooks/slack/:collectionId</code>
+        </li>
+      </ol>
+      <h4>Use on Slack</h4>
+        <li>
+          You say <code>&lt;trigger_word&gt;</code>, webhook returns gyazo URL <br />
+          <a href="https://gyazo.com/efdf858044dd149611fcc53dc3d2c49f"><img src="https://i.gyazo.com/efdf858044dd149611fcc53dc3d2c49f.png" alt="https://gyazo.com/efdf858044dd149611fcc53dc3d2c49f"/></a>
+        </li>
+        <li>
+          You say <code>&lt;trigger_word&gt; html</code>, webhook returns html <br />
+          <a href="https://gyazo.com/11ad6c7070dc8d7426d6f9d707cb11e7"><img src="https://i.gyazo.com/11ad6c7070dc8d7426d6f9d707cb11e7.png" alt="https://gyazo.com/11ad6c7070dc8d7426d6f9d707cb11e7"/></a>
+        </li>
+        <li>
+          You say <code>&lt;trigger_word&gt; md|markdown</code>, webhook returns markdown <br />
+          <a href="https://gyazo.com/ccfabfd135da6c7e766e719b01cf4cd9"><img src="https://i.gyazo.com/ccfabfd135da6c7e766e719b01cf4cd9.png" alt="https://gyazo.com/ccfabfd135da6c7e766e719b01cf4cd9"/></a>
+        </li>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,27 @@
+{
+  "name": "gyazo-randomizer",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/pastak/gyazo-randomizer.git"
+  },
+  "author": "pastak <pasta0915@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/pastak/gyazo-randomizer/issues"
+  },
+  "homepage": "https://github.com/pastak/gyazo-randomizer#readme",
+  "dependencies": {
+    "cheerio": "^0.20.0",
+    "koa": "^1.2.0",
+    "koa-body": "^1.4.0",
+    "koa-router": "^5.4.0",
+    "koa-static": "^2.0.0",
+    "request-promise": "^3.0.0"
+  }
+}
