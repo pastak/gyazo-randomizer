@@ -1,5 +1,7 @@
 # Gyazo Collection Randomizer
 
+[![Build Status](https://travis-ci.org/pastak/gyazo-randomizer.svg?branch=master)](https://travis-ci.org/pastak/gyazo-randomizer)
+
 This is easy way to get image Url which is selected as random from [Gyazo Collection](https://support.gyazo.com/hc//articles/206458915-How-can-I-use-Gyazo-to-collect-and-share-multiple-images-at-once-).
 
 ## Usage
