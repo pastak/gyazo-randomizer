@@ -12,6 +12,16 @@ test('extension html', function *(t) {
   yield render.bind(koa, function * () {})
 })
 
+test('extension md', function *(t) {
+  t.plan(1)
+  const render = proxyquire('../../../server/render/index', {
+    './markdown': () => t.pass()
+  })
+  const koa = new Koa()
+  koa.extension = 'md'
+  yield render.bind(koa, function * () {})
+})
+
 test('extension nothing returns text', function *(t) {
   t.plan(1)
   const render = proxyquire('../../../server/render/index', {

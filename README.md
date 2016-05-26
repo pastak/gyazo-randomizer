@@ -15,6 +15,8 @@ If your collection URL is `https://gyazo.com/collections/51abd733329db8f65a26e04
     *   Sample: [https://gyazo-randomizer.herokuapp.com/random/51abd733329db8f65a26e040f70ffda3](https://gyazo-randomizer.herokuapp.com/random/51abd733329db8f65a26e040f70ffda3)
 *   View Html includes image: `https://gyazo-randomizer.herokuapp.com/random/:collectionId.html`
     *   Sample: [https://gyazo-randomizer.herokuapp.com/random/51abd733329db8f65a26e040f70ffda3.html](https://gyazo-randomizer.herokuapp.com/random/51abd733329db8f65a26e040f70ffda3.html)
+*   Get Markdown: `https://gyazo-randomizer.herokuapp.com/random/:collectionId.md`
+    *   Sample: [https://gyazo-randomizer.herokuapp.com/random/51abd733329db8f65a26e040f70ffda3.md](https://gyazo-randomizer.herokuapp.com/random/51abd733329db8f65a26e040f70ffda3.md)
 
 ### with Slack Webhook
 
