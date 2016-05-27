@@ -12,7 +12,7 @@ test('`<trigger_word>`', function *(t) {
       {
         pretext: "",
         text: "https://example.com/0123456789abcdef0123456789abcdef.png",
-        thumb_url: "https://example.com/0123456789abcdef0123456789abcdef.png",
+        image_url: "https://example.com/0123456789abcdef0123456789abcdef.png/r",
         mrkdwn_in: ["pretext"]
       }
     ]
@@ -31,7 +31,7 @@ test('`<trigger_word> html`', function *(t) {
       {
         pretext: "`<a href='https://example.com/0123456789abcdef0123456789abcdef.png' target='_blank'><img src='https://example.com/0123456789abcdef0123456789abcdef.png/r' /></a>`",
         text: "https://example.com/0123456789abcdef0123456789abcdef.png",
-        thumb_url: "https://example.com/0123456789abcdef0123456789abcdef.png",
+        image_url: "https://example.com/0123456789abcdef0123456789abcdef.png/r",
         mrkdwn_in: ["pretext"]
       }
     ]
@@ -46,7 +46,7 @@ test('`<trigger_word> md|markdown`', function *(t) {
       {
         pretext: "`[![https://example.com/0123456789abcdef0123456789abcdef.png](https://example.com/0123456789abcdef0123456789abcdef.png/r)](https://example.com/0123456789abcdef0123456789abcdef.png)`",
         text: "https://example.com/0123456789abcdef0123456789abcdef.png",
-        thumb_url: "https://example.com/0123456789abcdef0123456789abcdef.png",
+        image_url: "https://example.com/0123456789abcdef0123456789abcdef.png/r",
         mrkdwn_in: ["pretext"]
       }
     ]
@@ -77,7 +77,7 @@ test('`<trigger_word> hoge`', function *(t) {
       {
         pretext: "",
         text: "https://example.com/0123456789abcdef0123456789abcdef.png",
-        thumb_url: "https://example.com/0123456789abcdef0123456789abcdef.png",
+        image_url: "https://example.com/0123456789abcdef0123456789abcdef.png/r",
         mrkdwn_in: ["pretext"]
       }
     ]

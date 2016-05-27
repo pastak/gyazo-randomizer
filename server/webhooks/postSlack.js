@@ -20,7 +20,7 @@ module.exports = function *(next) {
       {
         pretext: text,
         text: imageUrl,
-        thumb_url: imageUrl,
+        image_url: imageUrl + '/r',
         mrkdwn_in:  ['pretext']
       }
     ]
