@@ -20,7 +20,7 @@ If your collection URL is `https://gyazo.com/collections/51abd733329db8f65a26e04
 
 ### with Slack Webhook
 
-#### Setting Outcomming Webhook
+#### Setting Outgoing Webhook
 
 1.  Open [your team's Outgoing Webhook Settings](https://my.slack.com/services/new/outgoing-webhook).
 2.  **MUST** set <mark>trigger_word(s)</mark>.
