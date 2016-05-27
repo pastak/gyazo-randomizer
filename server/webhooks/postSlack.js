@@ -20,7 +20,7 @@ module.exports = function *(next) {
       {
         pretext: text,
         text: imageUrl,
-        thumb_url: this.gyazoUrls.thumbUrl,
+        thumb_url: imageUrl,
         mrkdwn_in:  ['pretext']
       }
     ]

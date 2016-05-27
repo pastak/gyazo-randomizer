@@ -12,7 +12,7 @@ test('`<trigger_word>`', function *(t) {
       {
         pretext: "",
         text: "https://example.com/0123456789abcdef0123456789abcdef.png",
-        thumb_url: "https://example.com/thumb/200/0123456789abcdef0123456789abcdef.png",
+        thumb_url: "https://example.com/0123456789abcdef0123456789abcdef.png",
         mrkdwn_in: ["pretext"]
       }
     ]
